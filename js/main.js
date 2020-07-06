@@ -27,6 +27,15 @@ $(document).ready(function(){ //open jquery library when DOM is fully loaded
     // carouselKeyControl();
     // });
 
+  $('.slider-wrapper .nav>i').click(function(){
+    $('.nav >i').removeClass('active');
+    $(this).addClass('active');
+    var thisIndex = $(this).index();
+    $('img.active').removeClass('active');
+    $('img').eq(thisIndex).addClass('active');
+
+ });
+
 });  //close document ready function
 
 // MY functions................................................
